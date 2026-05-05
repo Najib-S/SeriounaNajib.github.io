@@ -1,6 +1,515 @@
-<html>
-  <body>
-    <p> bonjour 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — SERIOUNA Najib | BTS SIO SISR</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════
+     NAVIGATION
+══════════════════════════════════════ -->
+<nav id="nav">
+  <div class="nav-wrap">
+    <span class="nav-brand">&lt;Najib<em>.</em>dev /&gt;</span>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero"   class="on">Accueil</a></li>
+      <li><a href="#cv">CV</a></li>
+      <li><a href="#ap">AP</a></li>
+      <li><a href="#stage">Stage</a></li>
+      <li><a href="#veille">Veille</a></li>
+    </ul>
+    <button class="nav-burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+
+<!-- ══════════════════════════════════
+     ACCUEIL
+══════════════════════════════════════ -->
+<section id="hero">
+  <div class="wrap">
+
+    <span class="hero-tag">BTS SIO · Option SISR · Lycée La Martinière Duchère · Lyon</span>
+
+    <h1 class="hero-name">
+      SERIOUNA <span>Najib</span>
+    </h1>
+
+    <p class="hero-role">
+      Étudiant en BTS SIO option SISR — Systèmes, Réseaux & Cybersécurité
     </p>
-  </body>
+
+    <p class="hero-bio">
+      En 1ère année de BTS SIO option SISR au lycée La Martinière Duchère à Lyon (2025–2026).
+      Ce portfolio présente mon parcours de professionnalisation : ateliers pratiques,
+      certifications, stage et veille technologique.
+    </p>
+
+    <div class="hero-badges">
+      <span class="badge-cert">ANSSI SecNumacadémie — 100 %</span>
+      <span class="badge-cert">Certification PIX</span>
+    </div>
+
+    <div class="hero-btns">
+      <a href="#stage" class="btn btn-p">Voir mon stage</a>
+      <a href="#cv"    class="btn btn-s">Mon CV</a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════
+     CV
+══════════════════════════════════════ -->
+<section id="cv">
+  <div class="wrap">
+
+    <div class="sec-hd reveal">
+      <span class="sec-tag">Parcours</span>
+      <h2>Mon CV</h2>
+      <div class="sec-bar"></div>
+    </div>
+
+    <div class="cv-links reveal">
+
+      <a href="CV_Najib_SERIOUNA_Stage_SISR.pdf" target="_blank" class="cv-main-btn">
+        <span class="cv-btn-icon">📄</span>
+        <span class="cv-btn-text">
+          <span class="cv-btn-label">Consulter mon CV</span>
+          <span class="cv-btn-sub">SERIOUNA Najib — BTS SIO SISR 2025–2026</span>
+        </span>
+        <span class="cv-btn-arrow">↗</span>
+      </a>
+
+      <!-- REMPLACE href="#" par ton lien Google Sheets tableau de synthèse -->
+      <a href="#" target="_blank" class="synthese-btn">
+        📋 Tableau de synthèse E4 — BTS SIO SISR 2025–2026
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════
+     ATELIERS PROFESSIONNELS
+══════════════════════════════════════ -->
+<section id="ap">
+  <div class="wrap">
+
+    <div class="sec-hd reveal">
+      <span class="sec-tag">Ateliers Professionnels</span>
+      <h2>Mes AP</h2>
+      <div class="sec-bar"></div>
+    </div>
+
+    <div class="tabs reveal">
+      <button class="tab-btn on" onclick="switchTab(event,'ap1')">1ère Année</button>
+      <button class="tab-btn"   onclick="switchTab(event,'ap2')">2ème Année</button>
+    </div>
+
+    <!-- AP 1ère année -->
+    <div class="tab-pane on" id="ap1">
+      <div class="ap-grid">
+
+        <!-- REMPLACE ces cartes par tes vrais AP quand tu t'en souviens -->
+        <div class="ap-card reveal">
+          <div class="ap-head">
+            <span class="ap-icon">⏳</span>
+            <span class="ap-yr">1ère année</span>
+          </div>
+          <h3>AP 1 — À compléter plus tard</h3>
+          <p>Le titre, la description et les technologies utilisées seront renseignés prochainement.</p>
+          <div class="ap-tags"><span class="ap-tag">À compléter</span></div>
+        </div>
+
+        <div class="ap-card reveal">
+          <div class="ap-head">
+            <span class="ap-icon">⏳</span>
+            <span class="ap-yr">1ère année</span>
+          </div>
+          <h3>AP 2 — À compléter plus tard</h3>
+          <p>Le titre, la description et les technologies utilisées seront renseignés prochainement.</p>
+          <div class="ap-tags"><span class="ap-tag">À compléter</span></div>
+        </div>
+
+        <div class="ap-card reveal">
+          <div class="ap-head">
+            <span class="ap-icon">⏳</span>
+            <span class="ap-yr">1ère année</span>
+          </div>
+          <h3>AP 3 — À compléter plus tard</h3>
+          <p>Le titre, la description et les technologies utilisées seront renseignés prochainement.</p>
+          <div class="ap-tags"><span class="ap-tag">À compléter</span></div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- AP 2ème année -->
+    <div class="tab-pane" id="ap2">
+      <div class="ap-grid">
+
+        <div class="ap-card reveal">
+          <div class="ap-head">
+            <span class="ap-icon">⏳</span>
+            <span class="ap-yr">2ème année</span>
+          </div>
+          <h3>AP 2ème année — À compléter plus tard</h3>
+          <p>Les ateliers de 2ème année seront ajoutés au fur et à mesure de l'année scolaire.</p>
+          <div class="ap-tags"><span class="ap-tag">À compléter</span></div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════
+     STAGES
+══════════════════════════════════════ -->
+<section id="stage">
+  <div class="wrap">
+
+    <div class="sec-hd reveal">
+      <span class="sec-tag">Immersion Professionnelle</span>
+      <h2>Mes Stages</h2>
+      <div class="sec-bar"></div>
+    </div>
+
+    <!-- Onglets Stage 1 / Stage 2 -->
+    <div class="tabs reveal">
+      <button class="tab-btn on" onclick="switchTab(event,'s1')">Stage 1ère année</button>
+      <button class="tab-btn"   onclick="switchTab(event,'s2')">Stage 2ème année</button>
+    </div>
+
+
+    <!-- ══════════════════════════
+         STAGE 1ÈRE ANNÉE — MF2i
+    ══════════════════════════════ -->
+    <div class="tab-pane on" id="s1">
+
+      <!-- Présentation entreprise -->
+      <div class="card reveal" style="margin-bottom:1.4rem;">
+        <p class="block-lbl">🏢 Présentation de l'entreprise</p>
+        <div class="ent-grid">
+          <div class="ent-row"><span class="ent-k">Entreprise</span><span class="ent-v">MF2i</span></div>
+          <div class="ent-row"><span class="ent-k">Adresse</span><span class="ent-v">7 rue Maurice Audibert, 69800 Saint-Priest</span></div>
+          <div class="ent-row"><span class="ent-k">Secteur</span><span class="ent-v">Prestations & conseil informatique</span></div>
+          <div class="ent-row"><span class="ent-k">Activité</span><span class="ent-v">Audit, dépannage, maintenance et mise en conformité SI</span></div>
+          <div class="ent-row"><span class="ent-k">Forme</span><span class="ent-v">SAS — Capital 50 000 €</span></div>
+          <div class="ent-row"><span class="ent-k">Fondée</span><span class="ent-v">2017</span></div>
+          <div class="ent-row"><span class="ent-k">Période</span><span class="ent-v">11 mai — 19 juin 2026 · 6 semaines</span></div>
+          <div class="ent-row"><span class="ent-k">Service</span><span class="ent-v">Administration systèmes & réseaux</span></div>
+        </div>
+        <p style="font-size:.88rem;margin-top:.8rem;">
+          MF2i accompagne les entreprises dans la gestion et la maintenance de leur système
+          d'information : maintenance préventive et corrective, audit, mise en conformité
+          et conseil en infrastructure numérique.
+          <!-- COMPLÈTE avec les infos que tu découvres sur place -->
+        </p>
+      </div>
+
+      <!-- Situations Professionnelles -->
+      <p class="block-lbl reveal" style="margin-bottom:1rem;">📁 Situations Professionnelles</p>
+
+      <div class="sp-wrap">
+
+        <!-- SP 1 -->
+        <div class="sp reveal">
+          <div class="sp-hd" onclick="toggleSP(this)">
+            <div class="sp-left">
+              <span class="sp-n">1</span>
+              <!-- REMPLACE par le titre de ta vraie SP -->
+              <h3>SP 1 — Titre de la situation professionnelle</h3>
+            </div>
+            <span class="sp-arr">+</span>
+          </div>
+          <div class="sp-body">
+            <div class="sp-inner">
+              <div class="rub">
+                <p class="rub-lbl">🏢 Contexte</p>
+                <!-- REMPLACE par ton contexte réel, au présent -->
+                <p>Dans le cadre de mon stage au sein de MF2i, société de services informatiques
+                basée à Saint-Priest, je suis intégré au service technique composé de [X] personnes.
+                La mission se déroule sur [durée].</p>
+              </div>
+              <div class="rub">
+                <p class="rub-lbl">🎯 Besoin / Objectif</p>
+                <!-- REMPLACE : le POURQUOI de ta mission -->
+                <p>L'entreprise / le client rencontre le problème suivant : [décrire].
+                L'objectif est de [décrire la mission]. Elle est importante car [enjeu].</p>
+              </div>
+              <div class="rub">
+                <p class="rub-lbl">⚙️ Environnement technologique</p>
+                <div class="tchips">
+                  <!-- REMPLACE par tes vrais outils -->
+                  <span class="tchip">À compléter lors du stage</span>
+                </div>
+              </div>
+              <div class="rub">
+                <p class="rub-lbl">🔧 Réalisation</p>
+                <ol class="steps">
+                  <!-- REMPLACE par tes vraies étapes -->
+                  <li>Étape 1 — À compléter lors du stage</li>
+                  <li>Étape 2 — À compléter lors du stage</li>
+                  <li>Étape 3 — À compléter lors du stage</li>
+                </ol>
+              </div>
+              <div class="rub">
+                <p class="rub-lbl">✅ Bilan</p>
+                <!-- REMPLACE par ton vrai bilan, au présent -->
+                <p>Cette situation professionnelle me permet d'acquérir [compétences].
+                Les difficultés rencontrées sont [difficultés]. Le résultat obtenu est [résultat].
+                Cette expérience m'apporte [bénéfice personnel et professionnel].</p>
+              </div>
+            </div>
+          </div>
+        </div><!-- /SP 1 -->
+
+        <!-- SP 2 — DUPLIQUE ce bloc pour ajouter d'autres SP -->
+        <div class="sp reveal">
+          <div class="sp-hd" onclick="toggleSP(this)">
+            <div class="sp-left">
+              <span class="sp-n">2</span>
+              <h3>SP 2 — Titre de la situation professionnelle</h3>
+            </div>
+            <span class="sp-arr">+</span>
+          </div>
+          <div class="sp-body">
+            <div class="sp-inner">
+              <div class="rub">
+                <p class="rub-lbl">🏢 Contexte</p>
+                <p class="todo-note">⏳ À compléter lors du stage</p>
+              </div>
+              <div class="rub">
+                <p class="rub-lbl">🎯 Besoin / Objectif</p>
+                <p class="todo-note">⏳ À compléter lors du stage</p>
+              </div>
+              <div class="rub">
+                <p class="rub-lbl">⚙️ Environnement technologique</p>
+                <div class="tchips"><span class="tchip">⏳ À compléter</span></div>
+              </div>
+              <div class="rub">
+                <p class="rub-lbl">🔧 Réalisation</p>
+                <ol class="steps"><li>À compléter lors du stage</li></ol>
+              </div>
+              <div class="rub">
+                <p class="rub-lbl">✅ Bilan</p>
+                <p class="todo-note">⏳ À compléter lors du stage</p>
+              </div>
+            </div>
+          </div>
+        </div><!-- /SP 2 -->
+
+      </div><!-- /sp-wrap s1 -->
+    </div><!-- /tab s1 -->
+
+
+    <!-- ══════════════════════════
+         STAGE 2ÈME ANNÉE — À compléter
+    ══════════════════════════════ -->
+    <div class="tab-pane" id="s2">
+
+      <!-- Présentation entreprise -->
+      <div class="card reveal" style="margin-bottom:1.4rem;">
+        <p class="block-lbl">🏢 Présentation de l'entreprise</p>
+        <div class="ent-grid">
+          <!-- REMPLACE tout en 2ème année -->
+          <div class="ent-row"><span class="ent-k">Entreprise</span><span class="ent-v todo-note">⏳ À compléter</span></div>
+          <div class="ent-row"><span class="ent-k">Adresse</span><span class="ent-v todo-note">⏳ À compléter</span></div>
+          <div class="ent-row"><span class="ent-k">Secteur</span><span class="ent-v todo-note">⏳ À compléter</span></div>
+          <div class="ent-row"><span class="ent-k">Activité</span><span class="ent-v todo-note">⏳ À compléter</span></div>
+          <div class="ent-row"><span class="ent-k">Période</span><span class="ent-v todo-note">⏳ À compléter</span></div>
+          <div class="ent-row"><span class="ent-k">Service</span><span class="ent-v todo-note">⏳ À compléter</span></div>
+        </div>
+        <p style="font-size:.88rem;margin-top:.8rem;color:var(--t3);">
+          La description de l'entreprise sera renseignée lors du stage de 2ème année.
+        </p>
+      </div>
+
+      <!-- SP Stage 2 -->
+      <p class="block-lbl reveal" style="margin-bottom:1rem;">📁 Situations Professionnelles</p>
+
+      <div class="sp-wrap">
+
+        <div class="sp reveal">
+          <div class="sp-hd" onclick="toggleSP(this)">
+            <div class="sp-left">
+              <span class="sp-n">1</span>
+              <h3>SP 1 — À compléter en 2ème année</h3>
+            </div>
+            <span class="sp-arr">+</span>
+          </div>
+          <div class="sp-body">
+            <div class="sp-inner">
+              <div class="rub">
+                <p class="rub-lbl">🏢 Contexte</p>
+                <p class="todo-note">⏳ À compléter en 2ème année</p>
+              </div>
+              <div class="rub">
+                <p class="rub-lbl">🎯 Besoin / Objectif</p>
+                <p class="todo-note">⏳ À compléter en 2ème année</p>
+              </div>
+              <div class="rub">
+                <p class="rub-lbl">⚙️ Environnement technologique</p>
+                <div class="tchips"><span class="tchip">⏳ À compléter</span></div>
+              </div>
+              <div class="rub">
+                <p class="rub-lbl">🔧 Réalisation</p>
+                <ol class="steps"><li>À compléter en 2ème année</li></ol>
+              </div>
+              <div class="rub">
+                <p class="rub-lbl">✅ Bilan</p>
+                <p class="todo-note">⏳ À compléter en 2ème année</p>
+              </div>
+            </div>
+          </div>
+        </div><!-- /SP s2 -->
+
+      </div><!-- /sp-wrap s2 -->
+    </div><!-- /tab s2 -->
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════
+     VEILLE TECHNOLOGIQUE
+══════════════════════════════════════ -->
+<section id="veille">
+  <div class="wrap">
+
+    <div class="sec-hd reveal">
+      <span class="sec-tag">Développement professionnel</span>
+      <h2>Veille Technologique</h2>
+      <div class="sec-bar"></div>
+    </div>
+
+    <div class="card reveal">
+      <p class="block-lbl">📡 Ma démarche</p>
+      <p style="font-size:.9rem;">
+        <!-- REMPLACE par ton vrai thème de veille quand tu l'auras choisi -->
+        Je pratique une veille informationnelle régulière sur les thèmes liés à la
+        <strong>cybersécurité, aux réseaux et aux nouvelles technologies SISR</strong>.
+        Cette veille me permet de rester à jour sur les évolutions du secteur
+        et de renforcer mes compétences au-delà du cadre scolaire.
+      </p>
+      <div class="v-tools">
+        <!-- REMPLACE par tes vraies sources -->
+        <span class="v-tool">📰 Flux RSS</span>
+        <span class="v-tool">🔗 LinkedIn</span>
+        <span class="v-tool">🐦 Twitter / X</span>
+        <span class="v-tool">📺 YouTube IT</span>
+      </div>
+    </div>
+
+    <!-- Fiches de veille — À compléter plus tard -->
+    <div class="v-grid">
+
+      <div class="v-card reveal">
+        <div class="v-top">
+          <span class="v-cat">À définir</span>
+          <span class="v-date">— / 2026</span>
+        </div>
+        <h3>Sujet de veille n°1 — À compléter plus tard</h3>
+        <p>La thématique, le résumé et la source seront renseignés une fois le sujet choisi.</p>
+        <a href="#" class="v-link">Source à renseigner</a>
+      </div>
+
+      <div class="v-card reveal">
+        <div class="v-top">
+          <span class="v-cat">À définir</span>
+          <span class="v-date">— / 2026</span>
+        </div>
+        <h3>Sujet de veille n°2 — À compléter plus tard</h3>
+        <p>La thématique, le résumé et la source seront renseignés une fois le sujet choisi.</p>
+        <a href="#" class="v-link">Source à renseigner</a>
+      </div>
+
+      <div class="v-card reveal">
+        <div class="v-top">
+          <span class="v-cat">À définir</span>
+          <span class="v-date">— / 2026</span>
+        </div>
+        <h3>Sujet de veille n°3 — À compléter plus tard</h3>
+        <p>La thématique, le résumé et la source seront renseignés une fois le sujet choisi.</p>
+        <a href="#" class="v-link">Source à renseigner</a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+<footer>
+  <div class="wrap">
+    <p>Portfolio de <em>SERIOUNA Najib</em> — BTS SIO SISR 2025–2026 · Lycée La Martinière Duchère, Lyon</p>
+  </div>
+</footer>
+
+
+<!-- ══════════════════════════════════
+     JAVASCRIPT
+══════════════════════════════════════ -->
+<script>
+  /* Navbar scroll */
+  const nav = document.getElementById('nav');
+  const secs = document.querySelectorAll('section');
+  const links = document.querySelectorAll('.nav-links a');
+
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 20);
+    let cur = '';
+    secs.forEach(s => { if (window.scrollY >= s.offsetTop - 90) cur = s.id; });
+    links.forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + cur));
+  });
+
+  /* Burger */
+  document.getElementById('burger').addEventListener('click', () => {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+  links.forEach(a => a.addEventListener('click', () => {
+    document.getElementById('navLinks').classList.remove('open');
+  }));
+
+  /* Onglets */
+  function switchTab(e, id) {
+    const sec = e.target.closest('section');
+    sec.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('on'));
+    sec.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('on'));
+    e.target.classList.add('on');
+    document.getElementById(id).classList.add('on');
+  }
+
+  /* Accordion SP */
+  function toggleSP(hd) {
+    const card = hd.closest('.sp');
+    const was  = card.classList.contains('open');
+    hd.closest('section').querySelectorAll('.sp').forEach(s => s.classList.remove('open'));
+    if (!was) card.classList.add('open');
+  }
+
+  /* Reveal au scroll */
+  const obs = new IntersectionObserver(
+    entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); }),
+    { threshold: 0.07 }
+  );
+  document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+
+</body>
 </html>
